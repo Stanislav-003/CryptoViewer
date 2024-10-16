@@ -1,0 +1,25 @@
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\bin\Debug\net8.0-windows\Digital Cloud Technologies.exe
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\bin\Debug\net8.0-windows\Digital Cloud Technologies.deps.json
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\bin\Debug\net8.0-windows\Digital Cloud Technologies.runtimeconfig.json
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\bin\Debug\net8.0-windows\Digital Cloud Technologies.dll
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\bin\Debug\net8.0-windows\Digital Cloud Technologies.pdb
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies_MarkupCompile.cache
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies_MarkupCompile.lref
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.g.resources
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.AssemblyInfoInputs.cache
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.AssemblyInfo.cs
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.csproj.CoreCompileInputs.cache
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.dll
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\refint\Digital Cloud Technologies.dll
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.pdb
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.genruntimeconfig.cache
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\ref\Digital Cloud Technologies.dll
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Views\CryptoMemberView.g.cs
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Views\CryptoMemberView.baml
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Views\CryptoMemberInfo.g.cs
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Views\CryptoMemberInfo.baml
