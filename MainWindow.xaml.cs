@@ -8,6 +8,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 {
     public ObservableCollection<CryptoCurrency> Members { get; set; } = new ObservableCollection<CryptoCurrency>();
     private ObservableCollection<CryptoCurrency> _allMembers = new ObservableCollection<CryptoCurrency>();
+    private ObservableCollection<CryptoCurrency> _filteredMembers = new ObservableCollection<CryptoCurrency>();
 
     public string ResponseContent
     {
@@ -30,7 +31,7 @@ public partial class MainWindow : Window, INotifyPropertyChanged
 
     private async void MakeRequest()
     {
-        ResponseContent = "Загрузка...";
+        ResponseContent = "Loading...";
 
         //await Task.Yield();
 
@@ -45,12 +46,13 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             {
                 _allMembers.Add(m);
             }
+            FilterMembers();
             CurrentPage = 1;
             UpdatePagination();
         }
         else
         {
-            ResponseContent = "Не удалось получить данные.";
+            ResponseContent = "Failed to retrieve data.";
         }
     }
 
@@ -59,10 +61,37 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         MakeRequest();
     }
 
+    private string _searchText = string.Empty;
+    public string SearchText
+    {
+        get { return _searchText; }
+        set
+        {
+            _searchText = value;
+            OnPropertyChanged(nameof(SearchText));
+            FilterMembers();
+        }
+    }
+
+    private void FilterMembers()
+    {
+        if (string.IsNullOrWhiteSpace(SearchText))
+        {
+            _filteredMembers = new ObservableCollection<CryptoCurrency>(_allMembers);
+        }
+        else
+        {
+            _filteredMembers = new ObservableCollection<CryptoCurrency>(
+                _allMembers.Where(m => m.Name.IndexOf(SearchText, StringComparison.OrdinalIgnoreCase) >= 0)
+            );
+        }
+        UpdatePagination();
+    }
+
     private void UpdatePagination()
     {
         int pageSize = int.Parse(SelectedRecord);
-        NumberOfPages = (_allMembers.Count + pageSize - 1) / pageSize;
+        NumberOfPages = (_filteredMembers.Count + pageSize - 1) / pageSize;
         CurrentPage = Math.Min(CurrentPage, NumberOfPages);
         UpdatePagedMembers();
     }
@@ -72,9 +101,9 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         int pageSize = int.Parse(SelectedRecord);
         int startIndex = (CurrentPage - 1) * pageSize;
         Members.Clear();
-        if (_allMembers.Any())
+        if (_filteredMembers.Any())
         {
-            foreach (var member in _allMembers.Skip(startIndex).Take(pageSize))
+            foreach (var member in _filteredMembers.Skip(startIndex).Take(pageSize))
             {
                 Members.Add(member);
             }

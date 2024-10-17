@@ -12,12 +12,21 @@
     <DockPanel Margin="10">
         <Grid DockPanel.Dock="Top">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="79*"></ColumnDefinition>
+                <ColumnDefinition Width="601*"/>
                 <ColumnDefinition Width="100"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <TextBox Grid.Column="0" Height="30" Margin="0,0,10,0" Padding="5" VerticalAlignment="Top"></TextBox>
-            <Button x:Name="btnRefreshRequest" Grid.Column="1" Click="btnRefreshRequest_Click">Обновить</Button>
+            <TextBlock Grid.Column="0" Text="Name Search:" VerticalAlignment="Center" Margin="0,0,30,0" Grid.ColumnSpan="3" Height="16"/>
+
+            <TextBox 
+                     x:Name="searchTextBox" 
+                     Height="30" 
+                     Margin="10,0,10,0" 
+                     Padding="5" 
+                     VerticalAlignment="Center" 
+                     Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+            <Button x:Name="btnRefreshRequest" Grid.Column="2" Click="btnRefreshRequest_Click">Refresh</Button>
         </Grid>
 
         <Grid Margin="0,5,0,0">
@@ -38,7 +47,7 @@
             </ListView>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,320,0,0" Grid.ColumnSpan="2" Width="275">
-                <TextBlock Text="Page:" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Text="Page size:" VerticalAlignment="Center" Margin="5"/>
                 <ComboBox Margin="5" SelectedValue="{Binding SelectedRecord}">
                     <ComboBox.Items>
                         <sys:String>10</sys:String>
