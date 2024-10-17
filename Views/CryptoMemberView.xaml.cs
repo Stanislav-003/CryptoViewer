@@ -1,28 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows.Controls;
 
-namespace Digital_Cloud_Technologies.Views
+namespace Digital_Cloud_Technologies.Views;
+
+/// <summary>
+/// Interaction logic for CryptoMemberView.xaml
+/// </summary>
+public partial class CryptoMemberView : UserControl
 {
-    /// <summary>
-    /// Interaction logic for CryptoMemberView.xaml
-    /// </summary>
-    public partial class CryptoMemberView : UserControl
+    public CryptoMemberView()
     {
-        public CryptoMemberView()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

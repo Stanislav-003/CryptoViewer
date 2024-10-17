@@ -23,3 +23,4 @@ C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj
 C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Views\CryptoMemberInfo.g.cs
 C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Views\CryptoMemberInfo.baml
+C:\Users\sever\Desktop\Digital Cloud Technologies\Digital Cloud Technologies\obj\Debug\net8.0-windows\Digital Cloud Technologies.sourcelink.json
