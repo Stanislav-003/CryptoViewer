@@ -14,7 +14,7 @@ public class Utilities
 
     public static string PrettyJson(string unPrettyJson)
     {
-        var oprions = new JsonSerializerOptions()
+        var options = new JsonSerializerOptions()
         {
             WriteIndented = true,
             Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
@@ -22,7 +22,7 @@ public class Utilities
 
         var jsonElement = JsonSerializer.Deserialize<JsonElement>(unPrettyJson);
 
-        return JsonSerializer.Serialize(jsonElement, oprions);
+        return JsonSerializer.Serialize(jsonElement, options);
     }
 
     public static async Task<CryptoResponse<CryptoCurrency>?> FetchCryptoCoinInfo()

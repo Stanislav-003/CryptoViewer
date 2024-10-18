@@ -1,5 +1,7 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Navigation;
 
 namespace Digital_Cloud_Technologies.Views;
 
@@ -17,5 +19,11 @@ public partial class CryptoMemberInfo : UserControl
     public CryptoMemberInfo()
     {
         InitializeComponent();
+    }
+
+    private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+    {
+        Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri) { UseShellExecute = true });
+        e.Handled = true;
     }
 }

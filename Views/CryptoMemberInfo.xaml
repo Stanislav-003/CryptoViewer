@@ -7,9 +7,38 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300"
              x:Name="this">
-    <Border BorderBrush="Silver" BorderThickness="1">
-        <DockPanel>
-            <TextBlock FontSize="40" Text="{Binding ElementName=this, Path=Member.Name}" d:Text="1235"></TextBlock>
-        </DockPanel>
-    </Border>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Style TargetType="TextBlock">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Padding" Value="5 5 0 0"/>
+                <Setter Property="LineHeight" Value="30"/>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+        <Border BorderBrush="Silver" BorderThickness="1">
+            <StackPanel>
+                <TextBlock Text="{Binding ElementName=this, Path=Member.CryptoInfo}" d:Text="1235"></TextBlock>
+
+                <TextBlock>
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=this, Path=Member.Explorer}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                <Run Text="Link - "/>
+                <Hyperlink NavigateUri="{Binding ElementName=this, Path=Member.Explorer}" 
+                        RequestNavigate="Hyperlink_RequestNavigate">
+                    <Run Text="{Binding ElementName=this, Path=Member.Explorer}"/>
+                </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </Border>
+    </ScrollViewer>
 </UserControl>
