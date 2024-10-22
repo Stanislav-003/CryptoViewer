@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Digital_Cloud_Technologies
+namespace CryptoViewer
 {
     /// <summary>
     /// Interaction logic for App.xaml

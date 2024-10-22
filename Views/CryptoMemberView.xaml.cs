@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Digital_Cloud_Technologies.Views;
+namespace CryptoViewer.Views;
 
 /// <summary>
 /// Interaction logic for CryptoMemberView.xaml

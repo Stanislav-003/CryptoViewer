@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text;
 
-namespace Digital_Cloud_Technologies;
+namespace CryptoViewer;
 
 public class Utilities
 {

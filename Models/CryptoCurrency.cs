@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Digital_Cloud_Technologies;
+namespace CryptoViewer;
 
 public class CryptoCurrency
 {

@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Windows;
 
-namespace Digital_Cloud_Technologies.Views;
+namespace CryptoViewer.Views;
 
 public partial class MainWindow : Window, INotifyPropertyChanged
 {

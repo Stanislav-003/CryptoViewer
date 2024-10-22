@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
 
-namespace Digital_Cloud_Technologies.Views;
+namespace CryptoViewer.Views;
 
 public partial class CryptoMemberInfo : UserControl
 {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Digital Cloud Technologies")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0e234e548e6002d734b51a4e24fda1cf17010f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a9e5861365591c29d8ddb8360403e40e0a9b182")]
 [assembly: System.Reflection.AssemblyProductAttribute("Digital Cloud Technologies")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Digital Cloud Technologies")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
